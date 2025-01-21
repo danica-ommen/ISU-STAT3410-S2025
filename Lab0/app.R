@@ -4,14 +4,14 @@ library(shiny)
 ui <- fluidPage(
   
   # App title ----
-  titlePanel("STAT 341: Lab #0"),
+  titlePanel("STAT 3410: Lab #0"),
   
   # Sidebar layout with input and output definitions ----
   sidebarLayout(
     # Sidebar panel for inputs ----
     sidebarPanel(
       # Instruction ----
-      h4("Welcome to STAT 341!"),
+      h4("Welcome to STAT 3410!"),
       p("As an introduction to using Shiny apps in R, please click the"),
       h6('Show Plot', align="center"),
       p("button below to see a summary of the first major for all the other 
@@ -35,7 +35,7 @@ server <- function(input, output) {
   observeEvent(input$do, {
     # Bar Chart of Majors ----
     output$BarChart <- renderPlot({
-      major_data <- read.csv("STAT341_majors.csv")
+      major_data <- read.csv("STAT3410-majors.csv")
       barplot(table(major_data), las=2)
     })
   })
