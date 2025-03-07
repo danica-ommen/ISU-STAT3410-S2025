@@ -1,0 +1,2 @@
+To run the app, enter the following command into the R console:
+shiny::runGitHub("danica-ommen/ISU-STAT3410-S2025", subdir = "Lab6")
