@@ -1,0 +1,3 @@
+To run the app, enter the following commands into the R console:
+install.packages("fabCI", "EnvStats")
+shiny::runGitHub("danica-ommen/ISU-STAT3410-S2025", subdir = "Lab8")
