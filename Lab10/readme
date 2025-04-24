@@ -1,0 +1,5 @@
+To run the app, enter the following commands into the R console:
+shiny::runGitHub("danica-ommen/ISU-STAT3410-S2025", subdir = "Lab10")
+
+You may need to install the following packages first:
+install.packages(c("gglot2", "extraDistr"))
